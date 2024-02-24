@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="file.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <div>
+            	<h1>Roll the dice 🎲</h1>
+            </div>
+		    </header>
+
+        <main>
+            <label>Choose a player:</label>
+            <select id="select-player">
+                <option class="hidden"></option>
+                <option value="player1">Player 1:</option>
+                <option value="player2">Player 2:</option>
+            </select>
+
+            <label for="times">Times:
+              <input id="times" type="number" min="0" max=6 placeholder="times to roll the dice"  >
+            </label>
+
+            <p id="player1-values">Player 1:</p>
+            <p id="player2-values">Player 2:</p>
+
+            <div class="mybutton">
+              <button id="mybutton">Click to Roll</button>
+            </div>
+
+        </main>
+
+        <footer>
+            <div class="mywinner">
+              <button id="winner">Winner</button>
+            </div>
+
+            <div class="messages">
+              <p id="Message"></p>
+              <p id="display-message"></p>
+            </div>
+
+            <div id="footers">
+            <button id="clear-button">Clear <i class="fa fa-trash-o" aria-hidden="true"></i></button>
+            <button id="play-again">Replay <i class="fa fa-refresh" aria-hidden="true"></i></button>
+            </div>
+            
+        </footer>
+
+
+    </div>
+</body>
+
+</html>
